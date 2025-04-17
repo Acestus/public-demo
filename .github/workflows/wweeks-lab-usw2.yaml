@@ -1,4 +1,4 @@
-name: wweeks-lab-usw2
+name: wweeks-dev-usw2
 
 on:
   workflow_dispatch: 
@@ -6,14 +6,14 @@ on:
     branches:
       - main
     paths:
-      - 'wweeks-lab-usw2/**'
+      - 'wweeks-dev-usw2/**'
 
 env:
   Location: 'westus2'
-  StackName: 'stack-wweeks-lab-usw2'
-  ResourceGroup: 'rg-wweeks-lab-usw2'
-  TemplateFile: 'wweeks-lab-usw2/wweeks-lab-usw2.bicep'
-  ParameterFile: 'wweeks-lab-usw2/wweeks-lab-usw2.bicepparam'
+  StackName: 'stack-wweeks-dev-usw2'
+  ResourceGroup: 'rg-wweeks-dev-usw2'
+  TemplateFile: 'wweeks-dev-usw2/wweeks-dev-usw2.bicep'
+  ParameterFile: 'wweeks-dev-usw2/wweeks-dev-usw2.bicepparam'
 
 jobs:
   update-bicep:
