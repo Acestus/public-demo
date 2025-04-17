@@ -35,4 +35,4 @@ New-AzResourceGroupDeploymentStack -Name $StackName -Location $Location -Templat
 Set-AzResourceGroupDeploymentStack -Name $StackName -Location $Location -DenySettingsMode None -TemplateParameterFile $ParameterFile -ActionOnUnmanage 'deleteResources' -ResourceGroupName $RGName 
 
 # Delete deployment stack
-Remove-AzResourceGroupDeploymentStack -Name $StackName -ResourceGroupName $RGName
+Remove-AzResourceGroupDeploymentStack -Name $StackName -ResourceGroupName $RGName -ActionOnUnmanage DeleteResources

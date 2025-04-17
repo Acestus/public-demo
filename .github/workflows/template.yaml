@@ -1,18 +1,18 @@
-name: wweeks-lab-usw2
+name: <template>
 
 on:
   workflow_dispatch: 
   push:
     paths:
-      - 'wweeks-lab-usw2/**'
+      - '<template>/**'
 
 env:
   Location: 'westus2'
   Subscription: 'Acestus'
-  StackName: 'stack-wweeks-lab-usw2'
-  ResourceGroup: 'rg-wweeks-lab-usw2'
-  TemplateFile: 'wweeks-lab-usw2/wweeks-lab-usw2.bicep'
-  ParameterFile: 'wweeks-lab-usw2/wweeks-lab-usw2.bicepparam'
+  StackName: 'stack-<template>'
+  ResourceGroup: 'rg-<template>'
+  TemplateFile: '<template>/<template>.bicep'
+  ParameterFile: '<template>/<template>.bicepparam'
 
 # don't touch below this line
 
