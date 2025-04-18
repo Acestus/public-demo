@@ -3,6 +3,8 @@ name: <template>
 on:
   workflow_dispatch: 
   push:
+    branches:
+      - <template>
     paths:
       - '<template>/**'
 
